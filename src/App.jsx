@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
+import PokemonsPage from './pages/PokemonsPage'
 
 function App() {
 
@@ -20,6 +21,8 @@ function App() {
           <Routes>
 
             <Route path={"/"} element={ <Home />}/>
+
+            <Route path={"/pokemon-details/:pokeName"} element={ <PokemonsPage />}/>
 
 
 
